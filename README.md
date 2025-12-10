@@ -53,15 +53,6 @@ docker-compose up
 
 The application will be available at `http://localhost:80`
 
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run type-check` - Run TypeScript type checking
-- `npm run lint` - Lint and fix code
-- `npm run format` - Format code with Prettier
-
 ## 📁 Project Structure
 
 ```
