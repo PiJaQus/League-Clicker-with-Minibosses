@@ -122,3 +122,9 @@ All UI text is fully translated!
 ## 📝 License
 
 MIT License - See [LICENSE](LICENSE) file for details
+
+<img width="1182" height="917" alt="Bildschirmfoto 2025-12-10 um 12 53 56" src="https://github.com/user-attachments/assets/483dfe5b-f66c-43d0-866f-319aab16bc4a" />
+
+<img width="1182" height="917" alt="Bildschirmfoto 2025-12-10 um 12 53 56" src="https://github.com/user-attachments/assets/e317610a-cf0e-40e8-9006-e0ca709905e8" />
+
+
