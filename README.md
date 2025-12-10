@@ -123,9 +123,11 @@ All UI text is fully translated!
 
 MIT License - See [LICENSE](LICENSE) file for details
 
-**Game view**
+## 🎮 Game view
 
 <img width="1048" height="919" alt="Bildschirmfoto 2025-12-10 um 12 54 20" src="https://github.com/user-attachments/assets/2460dab8-b3bd-4799-a5cf-bb304519969e" />
+
+## 🎮 Battle view
 
 <img width="1182" height="917" alt="Bildschirmfoto 2025-12-10 um 12 53 56" src="https://github.com/user-attachments/assets/483dfe5b-f66c-43d0-866f-319aab16bc4a" />
 
