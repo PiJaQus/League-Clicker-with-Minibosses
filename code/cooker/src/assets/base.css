@@ -1,0 +1,124 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: #ffffff;
+  --color-text: #e9e9f1;
+
+  --section-gap: 160px;
+
+  /* extra accents for the Cookie theme */
+  --accent: #ff7ac6;
+  --accent-2: #ffd166;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  /* Starry fairytale night gradient */
+  background:
+    radial-gradient(1200px 800px at 50% -10%, #1b1c24 20%, #0f1117 70%, #0b0d12 100%),
+    #0b0d12;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    'Nunito',
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Twinkling stars overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.55), transparent 60%),
+    radial-gradient(1.5px 1.5px at 70% 60%, rgba(255,255,255,0.45), transparent 60%),
+    radial-gradient(1.2px 1.2px at 85% 20%, rgba(255,255,255,0.4), transparent 60%),
+    radial-gradient(1.8px 1.8px at 35% 80%, rgba(255,255,255,0.5), transparent 60%);
+  animation: twinkle 8s linear infinite;
+  opacity: .25;
+}
+
+h1, h2, h3 {
+  font-family: 'Baloo 2', 'Nunito', Inter, system-ui, -apple-system, sans-serif;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: .2; }
+  50% { opacity: .35; }
+}
+
+/* Reduced motion opt-out */
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}

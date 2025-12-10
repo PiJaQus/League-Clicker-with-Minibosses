@@ -1,0 +1,17 @@
+name: "cooker"
+
+services:
+  frontend:
+    image: "node:18-alpine"
+    container_name: "cooker-frontend"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/home/node/app
+      - ./data:/home/node/data
+    ports:
+      - "80:5173"
+      - "5713:5173"
+    command: sh -lc "npm install && npm run dev"
